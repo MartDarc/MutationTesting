@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for /Users/darcidannemartin/Desktop/OSU/linalg_copy/linalg.py: 86%</title>
+    <title>Coverage for /Users/darcidannemartin/Desktop/OSU/linalg_copy/linalg.py: 87%</title>
     <link rel="icon" sizes="32x32" href="favicon_32.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -18,15 +18,15 @@
 <div id="header">
     <div class="content">
         <h1>Coverage for <b>/Users/darcidannemartin/Desktop/OSU/linalg_copy/linalg.py</b> :
-            <span class="pc_cov">86%</span>
+            <span class="pc_cov">87%</span>
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
             301 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">264 run</button>
-            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">37 missing</button>
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">266 run</button>
+            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">35 missing</button>
             <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
-            <button type="button" class="par run show_par shortkey_p button_toggle_par" title="Toggle lines partially run">6 partial</button>
+            <button type="button" class="par run show_par shortkey_p button_toggle_par" title="Toggle lines partially run">4 partial</button>
         </h2>
     </div>
 </div>
@@ -365,8 +365,8 @@
     <p id="t310" class="pln"><span class="n"><a href="#t310">310</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t311" class="pln"><span class="n"><a href="#t311">311</a></span><span class="t"><span class="str">    """</span>&nbsp;</span><span class="r"></span></p>
     <p id="t312" class="run"><span class="n"><a href="#t312">312</a></span><span class="t">    <span class="nam">UPLO</span> <span class="op">=</span> <span class="nam">UPLO</span><span class="op">.</span><span class="nam">upper</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t313" class="par run show_par"><span class="n"><a href="#t313">313</a></span><span class="t">    <span class="key">if</span> <span class="nam">UPLO</span> <span class="key">not</span> <span class="key">in</span> <span class="op">(</span><span class="str">'L'</span><span class="op">,</span> <span class="str">'U'</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"><span class="annotate short">313&#x202F;&#x219B;&#x202F;314</span><span class="annotate long">line 313 didn't jump to line 314, because the condition on line 313 was never true</span></span></p>
-    <p id="t314" class="mis show_mis"><span class="n"><a href="#t314">314</a></span><span class="t">        <span class="key">raise</span> <span class="nam">ValueError</span><span class="op">(</span><span class="str">"UPLO argument must be 'L' or 'U'"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t313" class="run"><span class="n"><a href="#t313">313</a></span><span class="t">    <span class="key">if</span> <span class="nam">UPLO</span> <span class="key">not</span> <span class="key">in</span> <span class="op">(</span><span class="str">'L'</span><span class="op">,</span> <span class="str">'U'</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t314" class="run"><span class="n"><a href="#t314">314</a></span><span class="t">        <span class="key">raise</span> <span class="nam">ValueError</span><span class="op">(</span><span class="str">"UPLO argument must be 'L' or 'U'"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t315" class="pln"><span class="n"><a href="#t315">315</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t316" class="run"><span class="n"><a href="#t316">316</a></span><span class="t">    <span class="nam">extobj</span> <span class="op">=</span> <span class="nam">get_linalg_error_extobj</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
     <p id="t317" class="pln"><span class="n"><a href="#t317">317</a></span><span class="t">        <span class="nam">_raise_linalgerror_eigenvalues_nonconvergence</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -659,8 +659,8 @@
     <p id="t604" class="pln"><span class="n"><a href="#t604">604</a></span><span class="t"><span class="str">           [-0.        +0.4472136j,  0.89442719+0.j       ]])</span>&nbsp;</span><span class="r"></span></p>
     <p id="t605" class="pln"><span class="n"><a href="#t605">605</a></span><span class="t"><span class="str">    """</span>&nbsp;</span><span class="r"></span></p>
     <p id="t606" class="run"><span class="n"><a href="#t606">606</a></span><span class="t">    <span class="nam">UPLO</span> <span class="op">=</span> <span class="nam">UPLO</span><span class="op">.</span><span class="nam">upper</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t607" class="par run show_par"><span class="n"><a href="#t607">607</a></span><span class="t">    <span class="key">if</span> <span class="nam">UPLO</span> <span class="key">not</span> <span class="key">in</span> <span class="op">(</span><span class="str">'L'</span><span class="op">,</span> <span class="str">'U'</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"><span class="annotate short">607&#x202F;&#x219B;&#x202F;608</span><span class="annotate long">line 607 didn't jump to line 608, because the condition on line 607 was never true</span></span></p>
-    <p id="t608" class="mis show_mis"><span class="n"><a href="#t608">608</a></span><span class="t">        <span class="key">raise</span> <span class="nam">ValueError</span><span class="op">(</span><span class="str">"UPLO argument must be 'L' or 'U'"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t607" class="run"><span class="n"><a href="#t607">607</a></span><span class="t">    <span class="key">if</span> <span class="nam">UPLO</span> <span class="key">not</span> <span class="key">in</span> <span class="op">(</span><span class="str">'L'</span><span class="op">,</span> <span class="str">'U'</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t608" class="run"><span class="n"><a href="#t608">608</a></span><span class="t">        <span class="key">raise</span> <span class="nam">ValueError</span><span class="op">(</span><span class="str">"UPLO argument must be 'L' or 'U'"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t609" class="pln"><span class="n"><a href="#t609">609</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t610" class="run"><span class="n"><a href="#t610">610</a></span><span class="t">    <span class="nam">a</span><span class="op">,</span> <span class="nam">wrap</span> <span class="op">=</span> <span class="nam">_makearray</span><span class="op">(</span><span class="nam">a</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t611" class="run"><span class="n"><a href="#t611">611</a></span><span class="t">    <span class="nam">_assert_stacked_2d</span><span class="op">(</span><span class="nam">a</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -1169,7 +1169,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v6.0.2</a>,
-            created at 2021-11-10 21:54 -0800
+            created at 2021-11-13 22:54 -0800
         </p>
     </div>
 </div>

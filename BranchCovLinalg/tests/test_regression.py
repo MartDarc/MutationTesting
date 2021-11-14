@@ -66,7 +66,7 @@ class TestRegression:
     def test_large_svd_32bit(self):
         # See gh-4442, 64bit would require very large/slow matrices.
         x = np.eye(1000, 66)
-        np.linalg.svd(x)
+        linalg.svd(x)
 
     def test_svd_no_uv(self):
         # gh-4733
@@ -77,7 +77,7 @@ class TestRegression:
                 c = np.count_nonzero(np.absolute(w) > 0.5)
                 assert_equal(c, 1)
                 assert_equal(np.linalg.matrix_rank(a), 1)
-                assert_array_less(1, np.linalg.norm(a, ord=2))
+                assert_array_less(1, linalg.norm(a, ord=2))
 
     def test_norm_object_array(self):
         # gh-7575
