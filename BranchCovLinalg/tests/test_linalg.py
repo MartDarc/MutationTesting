@@ -675,6 +675,12 @@ class TestSVD(SVDCases, SVDBaseTests):
         assert_equal(u.shape, (0, 0))
         assert_equal(vh.shape, (4, 4))
         assert_equal(vh, np.eye(4))
+        
+        # Empty test to reach m < n for false full matrix
+        x = np.empty((0, 4))
+        u, s, vh = linalg.svd(x, full_matrices = False, compute_uv=True, hermitian=self.hermitian)
+        assert_equal(u.shape, (0, 0))
+        assert_equal(vh.shape, (0, 4))
 
 
 class SVDHermitianCases(HermitianTestCase, HermitianGeneralizedTestCase):
